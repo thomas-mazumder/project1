@@ -23,7 +23,7 @@ def make_qual(size):
     return ''.join([chr(j) for j in np.random.randint(PHRED_MIN, PHRED_MAX, size)])
 
 
-def iter_seq(n=100, l=100, is_fastq=False):
+def iter_seq(n=2, l=100, is_fastq=False):
     for i in range(n):
         header = f"seq{i}"
         seq = make_seq(l)
